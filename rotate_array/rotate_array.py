@@ -13,7 +13,7 @@ def rotate(nums, k):
     left = 0
     right = len(nums)-1
     nums.reverse()
-    reverse(nums, 0, k-1)
+    reverse(nums, left, k-1)
     reverse(nums, k, right)
     return nums
 
